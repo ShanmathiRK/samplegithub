@@ -10,15 +10,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class SampleGitTest {
+public class SampleGitTest2 {
 
   @Test
 	public void loginTest() throws IOException
 	{
 		WebDriver WD=new FirefoxDriver();
-		WD.get("http://www.ntltaxi.com/");
+		WD.get("https://www.bing.com/");
 		File src =((TakesScreenshot) WD).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\Selenium\\seleniumworkspace\\samplegittest\\screenshot\\test1.jpeg"));
+        FileUtils.copyFile(src, new File("C:\\Selenium\\seleniumworkspace\\samplegittest\\screenshot\\test.jpeg"));
 
 	}
 	
